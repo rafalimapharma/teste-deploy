@@ -13,11 +13,9 @@ jobs:
       with:
         host: ip-198-58-99-223.cloudezapp.io
         username: prauebi
-        key_path: /home/prauebi/.ssh/
         key: ${{ secrets.KEY }}
         port: 22122
         script:
-          echo "$secrets_KEY"
           cd deploy-folder
           git pull origin master
           git status
