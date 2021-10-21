@@ -8,14 +8,14 @@ jobs:
     name: teste 02
     runs-on: ubuntu-latest
     steps:
-    - name: SSH Remote Commands
-      uses: appleboy/ssh-action@v0.1.4
-      with:
-        host: ip-198-58-99-223.cloudezapp.io
-        username: prauebi
-        password: Adm!@#pr4uebi
-        port: 22122
-        script:
-          cd deploy-folder
-          git pull origin master
-          git status
+    - uses: hengkx/ssh-deploy@v1.0.1
+      env:
+        HOST: ip-198-58-99-223.cloudezapp.io
+        USERNAME: prauebi
+        PASSWORD: Adm!@#pr4uebi
+        PORT: 22122
+        SOURCE: 'dist/'
+        TARGET: '/home/prauebi/deploy-folder'
+        AFTER_COMMAND: 'npm run stop && npm install --production && npm run start'
+
+
