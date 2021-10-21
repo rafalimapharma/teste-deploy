@@ -13,7 +13,7 @@ jobs:
       with:
         host: ip-198-58-99-223.cloudezapp.io
         username: prauebi
-        key: 
+        key: ${{ secrets.KEY }}
         port: 22122
         script:
           cd deploy-folder
