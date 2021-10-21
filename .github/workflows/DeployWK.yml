@@ -1,0 +1,21 @@
+name: DeployWK
+on:
+  push:
+    branches: [main]
+
+jobs:
+  job_only:
+    name: teste 02
+    runs-on: ubuntu-latest
+    steps:
+    - name: testando os passos do video
+      uses: appleboy/ssh-action@master
+      with:
+        host: ip-198-58-99-223.cloudezapp.io
+        username: prauebi
+        key: 
+        port: 22122
+        script:
+          cd deploy-folder
+          git pull origin master
+          git status
