@@ -8,8 +8,8 @@ jobs:
     name: teste 02
     runs-on: ubuntu-latest
     steps:
-    - name: testando os passos do video
-      uses: appleboy/ssh-action@master
+    - name: SSH Remote Commands
+      uses: appleboy/ssh-action@v0.1.4
       with:
         host: ip-198-58-99-223.cloudezapp.io
         username: prauebi
