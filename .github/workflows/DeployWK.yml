@@ -16,6 +16,3 @@ jobs:
         PORT: 22122
         SOURCE: 'dist/'
         TARGET: '/home/prauebi/deploy-folder'
-        AFTER_COMMAND: 'npm run stop && npm install --production && npm run start'
-
-
