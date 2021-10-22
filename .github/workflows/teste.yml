@@ -12,9 +12,9 @@ jobs:
     steps:
       - name: deploy
         env:
-          HOST: ${{ conection_server.HOST }}
-          PORT: ${{ conection_server.PORT }}
-          USER: ${{ conection_server.USER }}
+          HOST: ${{ secrets.conection_server.HOST }}
+          PORT: ${{ secrets.conection_server.PORT }}
+          USER: ${{ secrets.conection_server.USER }}
         run:
           echo $HOST $PORT $USER
         
