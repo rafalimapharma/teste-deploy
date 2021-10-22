@@ -12,9 +12,9 @@ jobs:
     steps:
       - name: deploy
         env:
-          HOST: asdsa #${{ secrets.conection_server.HOST }}
-          PORT: ${{ secrets.conection_server.PORT }}
-          USER: ${{ secrets.KEY }}
+          HOST: asdsa #${{ secrets.HOST_SERVER }}
+          PORT: ${{ secrets.PORT_SERVER }}
+          USER: ${{ secrets.USER_SERVER }}
         run:
           echo $HOST $PORT $USER
         
