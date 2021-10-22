@@ -9,7 +9,6 @@ jobs:
   deployment:
     runs-on: ubuntu-latest
     environment: conection_server
-    permissions: read-all|write-all
     steps:
       - name: deploy
         env:
