@@ -18,4 +18,4 @@ jobs:
         debug: false
         command: |
           ls -lah
-          echo "I am $NAME"
+          echo "I am s $NAME"
