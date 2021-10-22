@@ -1,0 +1,22 @@
+name: Deploy1
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    environment: conection_server
+    permissions: read-all|write-all
+    steps:
+      - name: deploy
+        env:
+          HOST: ${{ conection_server.HOST }}
+          PORT: ${{ conection_server.PORT }}
+          USER: ${{ conection_server.USER }}
+        run:
+          echo $HOST $PORT $USER
+        
+      
