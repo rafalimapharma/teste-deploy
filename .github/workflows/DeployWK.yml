@@ -15,4 +15,3 @@ jobs:
         PASSWORD: Adm!@#pr4uebi
         PORT: 22122
         SOURCE: 'dist/'
-        TARGET: '/home/prauebi/deploy-folder'
