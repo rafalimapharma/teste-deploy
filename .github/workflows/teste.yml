@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: deploy
         env:
-          HOST: ${{ secrets.conection_server.HOST }}
+          HOST: asdsa #${{ secrets.conection_server.HOST }}
           PORT: ${{ secrets.conection_server.PORT }}
           USER: ${{ secrets.conection_server.USER }}
         run:
